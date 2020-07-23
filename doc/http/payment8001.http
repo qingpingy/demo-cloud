@@ -1,0 +1,6 @@
+### 获取payment记录
+GET http://127.0.0.1:8001/payment/get/2
+Accept: */*
+Cache-Control: no-cache
+
+###

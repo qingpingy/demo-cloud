@@ -1,0 +1,28 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: cloud-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/tw0713?serverTimezone=UTC&characterEncoding=utf8&useSSL=false&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+
+#  devtools:
+#    restart:
+#      enabled: true #是否支持热部署
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-alias-package: com.qpyue.cloud.entities
+  config-location: classpath:mybatis-config.xml
+
+
+
+
+
+
+
